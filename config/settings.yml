@@ -7,26 +7,32 @@
 
 # Set your project goal here - dollar amount
 # NOTE: if you manually want to adjust your progress to test the site, head over to the Order model (app/models/order.rb)
-project_goal: 100000
+project_goal: 25000
 
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
+# For other product_name usage
+product_name: "Advlo"
+
+# This'll be both the page header (top nav)
+product_name_header: "Advlo"
+
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "ADVLO"
+product_name_title: "Advlo - Adventure Local"
 
 # This will be used in sentences like Hooray You've just reserved product_description
 product_description: "Adventure Local"
 
 # An image showcasing your product -- it'll show up when you pin your product
 # It should be in app/assets/images
-product_image_path: "my-product-image.png"
+product_image_path: "advlo_video_pin.png"
 
 # The message on the preorder page, Lockitron's is ""
-value_proposition: "Roll your own crowdfunding"
+value_proposition: "Advlo needs your help...so its time to get Adventurous"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
 # Replace /embed/ in your video url path with /v/ for video playback to work.
-video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
+video_embed_url: "//player.vimeo.com/video/39778445?title=0&amp;byline=0&amp;color=ff0179"
 
 # If set to true, then the image at "/assets/video_placeholder.png" will be shown in place of the youtube
 # video.  When the user clicks it, the vid will replace the image and start playing.
@@ -34,7 +40,7 @@ video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
 # NOTE: you can set this to false, and no image will be use - first frame of the video will be displayed
 #
 # NOTE: this only works for youtube video at the moment.  If its not for youtube, then just leave this property blank
-use_video_placeholder: true
+use_video_placeholder: 
 
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
@@ -58,12 +64,12 @@ charge_limit: 25.00
 # Stats settings
 
 # On Lockitron, it's "backers"
-primary_stat: "backers"
+primary_stat: "adventurers"
 # This'll show up in the tweet as, "I'm backer number ..."
-primary_stat_verb: 'backer'
+primary_stat_verb: 'adventurer'
 
 # The 2nd call to action button, towards the middle-ish of the page
-middle_reserve_text: "Reserve Now"
+middle_reserve_text: "Get Adventurous"
 
 # When the project should end
 #expiration_date: <%= DateTime.now + 29 %>
@@ -74,10 +80,10 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Ships...sometime"
+ships: "Coming Spring 2015"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Reserve Now"
+call_to_action: "Join the Adventure"
 # On Lockitron, this is "Only $149 for a limited time"
 price_human: "It costs money!"
 

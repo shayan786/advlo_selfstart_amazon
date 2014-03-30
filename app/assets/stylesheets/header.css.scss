@@ -7,13 +7,36 @@
     font-size: inherit !important;
   }
 }
+
 #header 
 {
   width: 100%;
-  padding: 26px 0;
+  padding: 10px 0;
   -moz-box-shadow:    0px 1px 3px 0px #acacac;
   -webkit-box-shadow: 0px 1px 3px 0px #acacac;
   box-shadow:         0px 1px 3px 0px #acacac;
   background: #fcfcfc;
   position: relative;
+}
+
+.logo {
+  img {
+    width: 250px !important;
+  }
+}
+
+.menu_items {
+  clear: none !important;
+  margin-top: 25px;
+  font-size: 18px;
+
+  a {
+    margin: 0 10px;
+    color: $dark_green;
+    
+    &:hover {
+      text-decoration: none;
+      color: $light_green;
+    }
+  }
 }

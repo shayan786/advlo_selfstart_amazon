@@ -13,6 +13,7 @@
  *= require main
  *= require jquery.ui.all
  */
+
 .hidden
 {
   display: none;
