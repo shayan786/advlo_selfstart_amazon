@@ -18,8 +18,8 @@
   </div>
 
   <div id="backing">
-    <h2 class="center">Advenure Local</h2>
-    <h3 class="center"><%= number_to_currency Order.revenue, :precision => 0 %></h3>       
+    <h5 class="backing_header">Advlo, building the platform to connect adventurers with locals</h5>
+    <h3 class="center"><%= number_to_currency Order.revenue, :precision => 0 %></h3>     
 
     <% if Order.revenue.to_f < Order.goal.to_f %>
       <div id='progress_bg' class='small'>
@@ -35,9 +35,14 @@
     <% end %>
     <br/><br/><br/>
     <p class="center">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>
-      <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %></a>
-      <%= like_button %>
-    
+      <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %><i class="fa fa-angle-right angle_right"></i></a>
+
+      <!-- <%= like_button %> -->
+  </div>
+
+  <div id="social_buttons" class="center">
+      <a href="" class="social_button_fb"><i class="fa fa-facebook icon_font_size"></i>Share on facebook</a>
+      <a href="" class="social_button_tw"><i class="fa fa-twitter icon_font_size"></i>Share on twitter</a>
   </div>
   
 </div>
