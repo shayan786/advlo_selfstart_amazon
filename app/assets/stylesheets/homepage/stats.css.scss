@@ -140,6 +140,10 @@ body.lt-ie9
     background-image: linear-gradient(90deg, #3B5998 0%, #3B5998 100%); /* gradient fill */
 
     text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
   .social_button_tw {
@@ -156,6 +160,10 @@ body.lt-ie9
     background-image: linear-gradient(90deg, #4099FF 0%, #4099FF 100%); /* gradient fill */
 
     text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
   .icon_font_size {
