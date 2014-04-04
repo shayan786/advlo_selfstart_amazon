@@ -95,7 +95,7 @@ h3 {
 
 .locals_slider li { 
     list-style: none; 
-    height: 550px;
+    height: 600px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
@@ -138,6 +138,8 @@ h3 {
     text-indent: -999em;
     border: 2px solid #fff;
     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
     cursor: pointer;
     opacity: .4;
     -webkit-transition: background .5s, opacity .5s;

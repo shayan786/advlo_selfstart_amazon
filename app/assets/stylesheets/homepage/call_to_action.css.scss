@@ -45,11 +45,36 @@
   font-size: 28px;
 }
 
-#middle_reserve
-{
-  padding: 60px;
-  h2
-  {
-    margin-bottom: 26px;
+#middle_reserve {
+  padding-top: 80px;
+  padding-bottom: 150px;
+  background-color: $dark_green;
+
+  .reserve_middle {
+    margin-right: 180px;
+    //margin-top: 10px;
+    padding: 20px 0px 20px 45px;
+    width: 305px;
+    font-size: 28px;
+    float: right;
   }
+
+  .angle_right {
+    margin-left: 40px !important;
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-left: 160px;
+    float: left;
+    color: white;
+  }
+
+  .blue-button {
+    text-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+
+  }
+
 }

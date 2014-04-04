@@ -91,13 +91,16 @@ price_human: "It costs money!"
 dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
 
 # Social Stuff
-facebook_app_id: "1234567890"
+facebook_app_id: "210802829129036"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
 tweet_text: "to crowdfund"
 
 # Google Analytics
 google_id: "1234567890"
+
+# FB share link
+#fb_share_link: "";
 
 # If you want to change the images for the key points (e.g. "Kickstarter is not a store")
 # They're in app/assets/images/#{pointer_number}-background.png
