@@ -3,11 +3,14 @@
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title><%= Settings.product_name_title %></title>
+
+    <%= favicon_link_tag 'advlo_favicon.png' %>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
+
   </head>
   <!--[if lt IE 9 ]><body class="lt-ie9"><![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> <body><!--<![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <body id="top"><!--<![endif]-->
     <%= render 'preorder/header' %>
     <%= yield %>
     <%= render 'preorder/footer' %>

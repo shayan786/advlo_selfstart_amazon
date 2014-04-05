@@ -189,13 +189,9 @@ body.lt-ie9 {
 .blue_button {
   display: block;
   color: $button_color; /* text color */
-  text-shadow: 0 -1px 1px $button-text_shadow_color; /* drop shadow */
-  -moz-box-shadow:
-    0 1px 1px  $button_box_shadow_color /* drop shadow */,
-    inset 0 -1px $button_box_shadow_inset_color /* inner shadow */;
-  -webkit-box-shadow:
-    0 1px 1px $button_box_shadow_color /* drop shadow */,
-    inset 0 -1px 1px $button_box_shadow_inset_color /* inner shadow */;
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   background-image: $button_top_gradient; /* gradient fill */
   background-image: -moz-linear-gradient(90deg, $button_top_gradient 0%, $button_bottom_gradient 100%); /* gradient fill */
   background-image: -o-linear-gradient(90deg, $button_top_gradient 0%, $button_bottom_gradient 100%); /* gradient fill */
@@ -207,15 +203,9 @@ body.lt-ie9 {
   font-family: $primary_font, $secondary_font, $tertiary_font;
 }
 .blue_button:hover {
-  -moz-box-shadow:
-    0 1px 1px $button_box_shadow_color /* drop shadow */,
-    inset 0 -1px 1px $button_box_shadow_inset_color /* inner shadow */;
-  -webkit-box-shadow:
-    0 1px 1px$button_box_shadow_color /* drop shadow */,
-    inset 0 -1px 1px $button_box_shadow_inset_color /* inner shadow */;
-  box-shadow:
-    0 1px 1px $button_box_shadow_color /* drop shadow */,
-    inset 0 -1px 1px $button_box_shadow_inset_color /* inner shadow */;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   background-image: $button_ie9_gradient_hover; /* gradient fill */
   background-image: -moz-linear-gradient(90deg, $button_top_gradient_hover 0%, $button_bottom_gradient_hover 100%); /* gradient fill */
   background-image: -o-linear-gradient(90deg, $button_top_gradient_hover 0%, $button_bottom_gradient_hover 100%); /* gradient fill */
@@ -239,4 +229,26 @@ body.lt-ie9 {
   background-image: -o-linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
   background-image: -webkit-linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
   background-image: linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
+}
+
+#back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-shadow: none;
+
+  a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
 }

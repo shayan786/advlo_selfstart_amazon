@@ -4,18 +4,22 @@
   		<a href="/"><%= image_tag "advlo_header_logo.png", alt: "Advlo" %></a>
 	</div>
 	<div class="menu_items pull-right">
-		<a href="#one"> HOW IT WORKS </a>
-		<a href=""> PERKS </a>
-		<a href="#locals_slider"> LOCALS </a>
-		<a href="#faqs"> FAQs </a>
+    <%= link_to "HOW IT WORKS", "/#one" %>
+    <%= link_to "PERKS", "/#three" %>
+    <%= link_to "LOCALS", "/#locals_slider" %>
+    <%= link_to "FAQs", "/#faqs" %>
 	</div>	
 
   </div>
 </div>
 
+<p id="back-top">
+  <a href="#top"><i class="fa fa-caret-square-o-up"></i></a>
+</p>
+
 <!-- SMOOTH SCROLL -->
 <script>
-$(function() {
+$(document).ready(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -28,6 +32,7 @@ $(function() {
       }
     }
   });
+
 });
 </script>
 <!-- End of SMOOTH SCROLL -->
