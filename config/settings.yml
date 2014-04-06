@@ -96,6 +96,10 @@ facebook_app_id: "210802829129036"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
 tweet_text: "to crowdfund"
 
+#&p[images][0]=http://i.imgur.com/LM3cxZ1.png?1
+#&p[title]=Advlo - Adventure Local
+#&p[summary]=Advlo, building the platform to connect adventurers with locals"
+
 # Google Analytics
 google_id: "1234567890"
 
