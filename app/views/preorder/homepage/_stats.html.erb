@@ -5,7 +5,7 @@
         <img alt="video_place_holder" width='512px' height='385px' src="/assets/video_placeholder.png" />
       </div>
       <div id="player" class="hidden" style="display: none;">
-        <object width="512" height="385">
+        <object width="786" height="578">
           <param name="movie" value="<%= Settings.video_embed_url %>?autohide=1&showinfo=0&rel=0&autoplay=1" />
           <param name="allowFullScreen" value="true" />
           <param name="allowscriptaccess" value="always" />
@@ -13,13 +13,15 @@
         </object>
       </div>
     <% else %>
-      <iframe width='512' height='385' src="<%= video_url %>"></iframe>
+      <iframe width='720' height='405' src="<%= video_url %>"></iframe>
     <% end %>
   </div>
 
   <div id="backing">
-    <h5 class="backing_header">Advlo, building the platform to connect adventurers with locals</h5>
-    <h3 class="center"><%= number_to_currency Order.revenue, :precision => 0 %></h3>     
+    <h3 class="backing_header">HELP US BUILD A NEW WAY TO ADVENTURE</h3>
+
+    <p class="raised_number"><%= number_to_currency Order.revenue, :precision => 0 %></p>
+    <p class="raised_goal_text">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>     
 
     <% if Order.revenue.to_f < Order.goal.to_f %>
       <div id='progress_bg' class='small'>
@@ -33,16 +35,16 @@
         <div id='progress_text'><%= Order.percent %>% <%= Settings.progress_text %></div>
       </div>
     <% end %>
-    <br/><br/><br/>
-    <p class="center">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>
       <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %><i class="fa fa-angle-right angle_right"></i></a>
 
-      <!-- <%= like_button %> -->
+       <!-- <%= like_button %> -->
   </div>
 
+<!--
   <div id="social_buttons" class="center">
       <a href="" target="_BLANK" class="social_button_fb"><i class="fa fa-facebook icon_font_size"></i>Share on facebook</a>
       <a href="" target="_BLANK" class="social_button_tw"><i class="fa fa-twitter icon_font_size"></i>Share on twitter</a>
   </div>
+  -->
   
 </div>

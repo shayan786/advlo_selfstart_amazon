@@ -69,7 +69,7 @@ primary_stat: "adventurers"
 primary_stat_verb: 'adventurer'
 
 # The 2nd call to action button, towards the middle-ish of the page
-middle_reserve_text: "Get Adventurous"
+middle_reserve_text: "Get Updates ..."
 
 # When the project should end
 #expiration_date: <%= DateTime.now + 29 %>
@@ -95,10 +95,6 @@ facebook_app_id: "210802829129036"
 # Tweets are prefixed with "I'm #{Settings.primary_stat} number X for #{Settings.product_name}"
 # Maybe mention something about your product vision -- e.g. "to replace keys with my phone"
 tweet_text: "to crowdfund"
-
-#&p[images][0]=http://i.imgur.com/LM3cxZ1.png?1
-#&p[title]=Advlo - Adventure Local
-#&p[summary]=Advlo, building the platform to connect adventurers with locals"
 
 # Google Analytics
 google_id: "1234567890"

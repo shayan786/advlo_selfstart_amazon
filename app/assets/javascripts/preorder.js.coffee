@@ -9,6 +9,7 @@ Selfstarter =
     else
       $("#email").addClass("highlight") unless Selfstarter.firstTime
       $("#amazon_button").addClass("disabled") unless $("#amazon_button").hasClass("disabled")
+
   init: ->
     checkoutOffset = $('body').height() - $('.footer').outerHeight() #needs to be done upon init
 
