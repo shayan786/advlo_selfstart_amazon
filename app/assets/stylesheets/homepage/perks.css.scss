@@ -1,3 +1,50 @@
+#perks {
+  min-height: 600px;
+  padding: 30px 0 0px 0;
+
+  .perks_text {
+
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 400px;
+
+    .perks_header {
+      font-family: cabin_bold;
+
+    }
+
+    .perks_content {
+      font-family: cabin_regular;
+    }
+
+    .perks_btn {
+      padding: 20px 0px 20px 40px;
+      width: 300px;
+      font-size: 26px;
+      margin: 40px auto 0 auto;
+
+      .angle_right {
+        margin-left: 30px;
+
+      }
+    }
+
+  }
+
+  img {
+    float: right;
+    width: 750px;
+    margin-right: 50px;
+
+  }
+
+
+
+}
+
+
+/*
 .perks_icon_left {
 
   float: left !important;
@@ -44,3 +91,5 @@
   margin-top: 70px;
 
 }
+
+*/
