@@ -5,17 +5,18 @@
         All of your payment information will be secured and stored with Amazon Payments. If you don't have an Amazon account, simply select "I'm a new Customer" on the next page.
         <br />
         <br />
+        <!--
         <% if Settings.use_payment_options %>
           Select a payment option and enter your email address below.
         <% else %>
           Enter your email address below.
         <% end %>
+        -->
 
       </p>
       <%= form_tag "/preorder/prefill", :id => "checkout" do %>
         <%= render 'preorder/payment_options' %>
-
-        <!--
+        
         <div class="checkout_controls">
           <div class="checkout_controls_wrapper">
             <div class="checkout_controls_inner">
@@ -26,7 +27,6 @@
             </div>
           </div>
         </div>
-        -->
 
       <% end %>
     </div>

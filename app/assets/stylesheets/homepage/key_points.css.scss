@@ -2,6 +2,11 @@
   border-bottom: 1px solid #d2d2d2;
   background: #fff;
 }
+
+.texture_background {
+  background: asset-url('background_texture.png') repeat;
+}
+
 .big_wrapper .wrapper {
   padding: 35px 0;
 }
@@ -10,7 +15,9 @@
   //width: 440px;
   width: 100%;
   h3 {
+    font-family: cabin_bold;
     margin: 20px 0 30px 0;
+    font-size: 60px;
   }
 }
 
@@ -26,8 +33,8 @@ h3 {
 }
 
 #one {
-  background: url(image_path("1-background.png")) no-repeat bottom left;
-  min-height: 850px !important;
+  //background: url(image_path("1-background.png")) no-repeat bottom left;
+  min-height: 650px !important;
   width: 936px;
 }
 
@@ -60,28 +67,27 @@ h3 {
 
     width: 30%;
     min-height: 400px;
-    border: 3px solid $dark_green;
+    //border: 3px solid $dark_green;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 5px 1%;
 
-    &:hover {
-      color: white !important;
-      background-color: $light_green;
-    }
   }
 
   .header {
-    margin: 25px 0;
+    font-family: cabin_medium;
+    margin: 20px 0;
   }
 
   .icon {
-    font-size: 64px;
+    img {
+      width: 175px;
+    }
   }
 
   .content {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 0 15px;
   }
 }
@@ -100,6 +106,7 @@ h3 {
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
 
+    /*
     h3 {
       color: white;
       text-align: right;
@@ -119,6 +126,39 @@ h3 {
       margin: 30px 35px 0 650px;
       line-height: 27px;
     }
+    */
+
+    .local_quote_left {
+      float: left;
+      font-size: 34px;
+      margin-left: 40px;
+      margin-top: 40px;
+      margin-bottom: 100px;
+      width: 650px;
+    }
+
+    .local_title_left {
+      font-family: cabin_medium;
+      clear: left;
+      float: left;
+      margin-left: 300px;
+      font-size: 38px;
+      color: $orange;
+      line-height: 1;
+      text-align: right;
+    }
+
+    .local_caption_left {
+      clear: left;
+      float: left;
+      margin-left: 300px;
+      margin-top: 10px;
+      font-size: 28px;
+      color: $gray;
+      text-align: right;
+    }
+
+
 }
 
 .locals_slider ul li { float: left; }
