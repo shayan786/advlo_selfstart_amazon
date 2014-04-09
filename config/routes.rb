@@ -1,4 +1,5 @@
 Selfstarter::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root :to => 'preorder#index'
   match '/preorder'               => 'preorder#index', :via => [:get,:post]
   get 'preorder/checkout'

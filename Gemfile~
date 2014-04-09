@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.0'
 
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
@@ -38,3 +38,10 @@ gem 'amazon_flex_pay'
 
 # Configuration File
 gem 'rails_config'
+
+# boostrap
+gem 'bootstrap-sass', '>= 3.0.0.0'
+gem 'rails-bootstrap'
+
+# font-awesome
+gem 'font-awesome-rails'
