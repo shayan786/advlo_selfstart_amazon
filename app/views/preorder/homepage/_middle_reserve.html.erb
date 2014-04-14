@@ -1,10 +1,14 @@
 <div class="big_wrapper" id="middle_reserve">
   <div class="wrapper">
     
-    <%= form_tag "", :id=> "contact" do %> 
+    <%= form_tag "preorder/contact", :id=> "contact" do %> 
     	<%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "contact_email" %>
     	<%= submit_tag "Sign Up for Updates", :class => "blue_button", :id => "contact_button" %>
     <% end %>
+
+    <p class="contact_msg">
+    	Thank you, we will keep you updated!
+    </p>
     
     <!--
     <a href="/preorder/checkout" class="blue_button reserve_middle"><%= Settings.middle_reserve_text %><i class="fa fa-angle-right angle_right"></i></a>
