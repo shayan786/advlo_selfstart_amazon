@@ -1,18 +1,23 @@
 <div class="big_wrapper" id="middle_reserve">
   <div class="wrapper">
-    
-    <%= form_tag "preorder/contact", :id=> "contact" do %> 
-    	<%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "contact_email" %>
+
+    <%= form_tag "preorder/contact", :remote => true, :id=> "contact" do %> 
+    	<%= email_field_tag "contact_email", nil, :placeholder => "Email address", :required => "required", :id => "contact_email" %>
     	<%= submit_tag "Sign Up for Updates", :class => "blue_button", :id => "contact_button" %>
     <% end %>
 
-    <p class="contact_msg">
+    <p class="contact_msg center">
     	Thank you, we will keep you updated!
     </p>
-    
-    <!--
-    <a href="/preorder/checkout" class="blue_button reserve_middle"><%= Settings.middle_reserve_text %><i class="fa fa-angle-right angle_right"></i></a>
-	-->
+
+    <script> 
+    	$('#contact').on('ajax:send', function(event, data, status, xhr) {
+		  // Do your thing, data will be the response
+		  $(this).hide();
+
+		  $(".contact_msg").show();
+		});
+    </script>
 
   </div>
 </div>

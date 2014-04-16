@@ -54,8 +54,9 @@ class PreorderController < ApplicationController
 
   def contact
     @user = User.find_or_create_by(:email => params[:contact_email]);
+
     #puts "*******user #{@user.inspect}"
     #User.create_with(locked: false).find_or_create_by(:email => params[:contact_email]
-    redirect_to root_url
+    #redirect_to root_url
   end 
 end
