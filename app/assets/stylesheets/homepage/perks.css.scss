@@ -1,12 +1,13 @@
 #perks {
   min-height: 600px;
   padding: 30px 0 0px 0;
+  background-color: $off_white;
 
   .perks_text {
 
     float: left;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 325px;
     width: 400px;
 
     .perks_header {
@@ -22,7 +23,7 @@
       padding: 20px 0px 20px 40px;
       width: 300px;
       font-size: 26px;
-      margin: 40px auto 0 auto;
+      margin-top: 40px;
 
       .angle_right {
         margin-left: 30px;
@@ -38,58 +39,4 @@
     margin-right: 50px;
 
   }
-
-
-
 }
-
-
-/*
-.perks_icon_left {
-
-  float: left !important;
-  width: 240px;
-
-  .fa-umbrella {
-    font-size: 100px !important;
-  }
-
-  .perks_icon_title {
-    margin-top: 20px;
-    font-size: 28px;
-  }
-
-}
-
-.perk_info_right {
-  width: 640px;
-  float: right;
-  margin-top: 70px;
-
-}
-
-.perks_icon_right {
-
-  float: right !important;
-  width: 240px;
-  margin-top: 80px;
-
-  .fa-umbrella {
-    font-size: 100px !important;
-  }
-
-  .perks_icon_title {
-    margin-top: 20px;
-    font-size: 28px;
-  }
-
-}
-
-.perk_info_left {
-  width: 640px;
-  float: left;
-  margin-top: 70px;
-
-}
-
-*/

@@ -54,7 +54,8 @@ price: 	19.95
 # put code in seeds.rb, then run rake db:seed
 use_payment_options: true
 
-payment_description: "You really should change this text because people will see it on Amazon's order page!!!!!"
+#What ppl see on amazon checkout
+payment_description: "Thank you for being an Advlo backer! We can't do this without you."
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
@@ -83,7 +84,7 @@ progress_text: "Implemented"
 ships: "Coming Spring 2015"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Join the Adventure"
+call_to_action: "JOIN THE ADVENTURE"
 # On Lockitron, this is "Only $149 for a limited time"
 price_human: "It costs money!"
 

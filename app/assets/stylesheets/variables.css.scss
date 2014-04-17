@@ -81,10 +81,10 @@ src: asset-url('Cabin-SemiBoldItalic.otf');
 
 $primary_font:   "cabin_regular";
 $secondary_font: "cabin_regular";
-$tertiary_font:  "";
+$tertiary_font:  "cabin_regular";
 
-$header_font: "cabin-bold";
-$paragraph_font: "cabin-regular";
+$header_font: "cabin_bold";
+$paragraph_font: "cabin_regular";
 
 
 
@@ -139,6 +139,7 @@ $summary_color: #0088D6;
 
 // ADVLO CUSTOMS
 $tan: #EAE4CE;
+$off_white: #FFFAF0;
 $dark_green: #364033;
 $light_green: #809778;
 $orange: #E56B2D;

@@ -18,6 +18,7 @@
     font-family: cabin_bold;
     margin: 20px 0 30px 0;
     font-size: 60px;
+    background-color: $off_white;
   }
 }
 
@@ -77,18 +78,23 @@ h3 {
 
   .header {
     font-family: cabin_medium;
-    margin: 20px 0;
+    margin: 30px 0;
   }
 
   .icon {
     img {
       width: 175px;
     }
+
+    .create_icon {
+      width: 190px !important;
+    }
   }
 
   .content {
     margin-top: 20px;
     padding: 0 20px;
+    font-size: 20px;
   }
 }
 

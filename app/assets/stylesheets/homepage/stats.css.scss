@@ -21,8 +21,8 @@
   }
 
   .backing_header {
-    font-family: bebas_neue;
-    font-size: 48px;
+    font-family: cabin_bold;
+    font-size: 42px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@
     font-size: 32px;
     float: left !important;
     margin-right: 20px;
-    margin-left: 60px;
+    margin-left: 115px;
   }
 
   .raised_goal_text {
@@ -78,7 +78,7 @@ body.lt-ie9
 #progress_bg
 {
   margin-top: 20px;
-  margin-left: 25px;
+  margin-left: 75px;
   float: left;
   clear: left;
   height: 40px;
@@ -90,6 +90,7 @@ body.lt-ie9
   border-radius: 30px;
   width: 383px;
   background: #dbdbdb;
+
   #progress
   {
     height: 40px;
@@ -135,58 +136,4 @@ body.lt-ie9
   {
     height: 20px !important;
   }
-}
-
-
-#social_buttons {
-  clear: both;
-  padding-top: 50px !important;
-  text-shadow: none !important;
-
-  .social_button_fb {
-    border: 1px #3B5998 solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-right: 30px;
-    padding: 12px 15px;
-    color: white !important;
-
-    background-image: -moz-linear-gradient(90deg, #3B5998 0%, #3B5998 100%); /* gradient fill */
-    background-image: -o-linear-gradient(90deg, #3B5998 0%, #3B5998 100%); /* gradient fill */
-    background-image: -webkit-linear-gradient(90deg, #3B5998 0%, #3B5998 100%); /* gradient fill */
-    background-image: linear-gradient(90deg, #3B5998 0%, #3B5998 100%); /* gradient fill */
-
-    text-decoration: none;
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-
-  .social_button_tw {
-    border: 1px #4099FF solid;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    padding: 12px 15px;
-    color: white !important;
-
-    background-image: -moz-linear-gradient(90deg, #4099FF 0%, #4099FF 100%); /* gradient fill */
-    background-image: -o-linear-gradient(90deg, #4099FF 0%, #4099FF 100%); /* gradient fill */
-    background-image: -webkit-linear-gradient(90deg, #4099FF 0%, #4099FF 100%); /* gradient fill */
-    background-image: linear-gradient(90deg, #4099FF 0%, #4099FF 100%); /* gradient fill */
-
-    text-decoration: none;
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-
-  .icon_font_size {
-    font-size: 26px;
-    margin-right: 15px;
-  }
-
 }

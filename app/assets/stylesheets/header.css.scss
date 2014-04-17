@@ -19,7 +19,7 @@
   -moz-box-shadow:    0px 1px 3px 0px #acacac;
   -webkit-box-shadow: 0px 1px 3px 0px #acacac;
   box-shadow:         0px 1px 3px 0px #acacac;
-  background: $tan;
+  background: white;
   position: relative;
 }
 
@@ -31,11 +31,11 @@
 
 .menu_items {
   clear: none !important;
-  margin-top: 25px;
-  font-size: 18px;
+  margin-top: 23px;
+  font-size: 20px;
 
   a {
-    margin: 0 10px;
+    margin: 0 15px;
     color: $dark_green;
     
     &:hover {
