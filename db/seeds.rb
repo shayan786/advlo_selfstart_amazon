@@ -11,17 +11,57 @@ PaymentOption.create(
         {
             amount: 10.00,
             amount_display: '$10',
-            description: '<strong>Basic level: </strong>You receive a great big thankyou from us!  You Rock',
-            shipping_desc: '',
+            description: 'Advlo Weatherproof Decal Sticker + Big Virtual Thank You Hug <3 !',
+            shipping_desc: 'add $5 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
+        },
+        {
+            amount: 20.00,
+            amount_display: '$20',
+            description: 'Advlo Water Bottle + GoPro Raffle Entry (3 To Raffle)',
+            shipping_desc: 'add $5 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
+        },
+        {
+            amount: 35.00,
+            amount_display: '$35',
+            description: 'Advlo T-Shirt + GoPro Raffle Entry (3 To Raffle)',
+            shipping_desc: 'add $5 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
+        },
+        {
+            amount: 50.00,
+            amount_display: '$50',
+            description: 'Advlo T-Shirt + Decal Sticker + Raffle for an Adventure of your choice',
+            shipping_desc: 'add $5 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
+        },
+        {
+            amount: 75.00,
+            amount_display: '$75',
+            description: 'Advlo Canvas (Photo taken by a local from around the world) + Raffle for an Adventure of your choice',
+            shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
             limit: -1
         },
         {
             amount: 100.00,
             amount_display: '$100',
-            description: '<strong>Package 1: </strong>You receive our print edition',
-            shipping_desc: 'add $3 to ship outside the US',
-            delivery_desc: 'Estimated delivery: Oct 2013',
-            limit: 250
+            description: 'Advlo Canvas (Photo taken by a local from around the world) + Raffle for an Adventure to the Colorodo Rockies with the Advlo Team',
+            shipping_desc: 'add $5 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
+        },
+        {
+            amount: 250.00,
+            amount_display: '$250',
+            description: 'Advlo T-Shirt + Decal Sticker + Bottle + Canvas + Raffle for an Adventure to the Colorodo Rockies with the Advlo Team',
+            shipping_desc: 'add $10 to ship outside the US',
+            delivery_desc: '',
+            limit: -1
         }
     ])

@@ -2,6 +2,8 @@
 {
   width: 560px;
   float: left;
+  text-shadow: none !important;
+
   h3
   {
     margin-bottom: 30px;
@@ -72,7 +74,7 @@
   {
     font-size: 16px;
     color: black;
-    background-color: #E9E9E9;
+    //background-color: #E9E9E9;
     padding: 10px 20px;
     .limited
     {
@@ -85,7 +87,7 @@
       word-wrap: break-word;
       li:hover
       {
-        background-color: #F3F3F3;
+        background-color: #ffeac4;
         cursor: hand;
         cursor: pointer;
       }
@@ -117,10 +119,11 @@
           display: inline;
           float: left;
           color: #333;
-          font-size: 16px;
+          font-size: 22px;
           font-weight: bold;
           padding-right: 10px;
-          padding-top: 1px;
+          padding-top: 5px;
+          padding-bottom: 10px;
           margin: 0;
         }
         div.shipping
@@ -220,8 +223,14 @@
 
 .sidebar
   {
+  margin-top: 15px;
   float: right;
-  width: 300px;
+  width: 335px;
+  
+  .sidebar_header {
+    font-size: 26px;
+  }
+
   p
     {
     font-size: 18px;

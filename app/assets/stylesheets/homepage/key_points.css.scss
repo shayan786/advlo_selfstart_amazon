@@ -81,6 +81,10 @@ h3 {
     margin: 30px 0;
   }
 
+  .header_adjust {
+    margin: 15px 0 30px 0;
+  }
+
   .icon {
     img {
       width: 175px;
@@ -107,7 +111,7 @@ h3 {
 
 .locals_slider li { 
     list-style: none; 
-    height: 600px;
+    height: 650px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
@@ -136,10 +140,10 @@ h3 {
 
     .local_quote_left {
       float: left;
-      font-size: 34px;
+      font-size: 36px;
       margin-left: 40px;
-      margin-top: 40px;
-      margin-bottom: 100px;
+      margin-top: 150px;
+      margin-bottom: 150px;
       width: 650px;
     }
 
@@ -147,21 +151,50 @@ h3 {
       font-family: cabin_medium;
       clear: left;
       float: left;
-      margin-left: 300px;
       font-size: 38px;
+      margin-left: 40px;
       color: $orange;
       line-height: 1;
-      text-align: right;
     }
 
     .local_caption_left {
       clear: left;
       float: left;
-      margin-left: 300px;
       margin-top: 10px;
-      font-size: 28px;
+      margin-left: 40px;
+      font-size: 24px;
       color: $gray;
-      text-align: right;
+    }
+
+    .local_quote_right {
+      float: right;
+      font-size: 36px;
+      margin-right: 40px;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      width: 650px;
+    }
+
+    .local_title_right {
+      font-family: cabin_medium;
+      clear: right;
+      font-size: 38px;
+      color: $orange;
+      line-height: 1;
+    }
+
+    .local_caption_right {
+      clear: right;
+      margin-top: 10px;
+      font-size: 24px;
+      color: $gray;
+    }
+
+    .local_name_caption_right {
+      float: right;
+      clear: right;
+      margin-right: 120px;
+
     }
 
 

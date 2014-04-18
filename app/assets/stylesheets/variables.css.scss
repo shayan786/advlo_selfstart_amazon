@@ -90,9 +90,13 @@ $paragraph_font: "cabin_regular";
 
 
 // Gray background is a gradient -- top == 0%, middle == 50%, bottom == 100%
-$gray_background_top_color: 	 #F6F6F6;
-$gray_background_middle_color: #FAFAFA;
-$gray_background_bottom_color: #FAFAFA;
+//$gray_background_top_color: 	 #F6F6F6;
+//$gray_background_middle_color: #FAFAFA;
+//$gray_background_bottom_color: #FAFAFA;
+
+$gray_background_top_color: 	 #F7F0DD;
+$gray_background_middle_color: 	#F7F0DD;
+$gray_background_bottom_color: 	#F7F0DD;
 
 // The bottom border on the gray backgrounds
 $gray_background_border_color: #C4C4C4;
@@ -139,7 +143,7 @@ $summary_color: #0088D6;
 
 // ADVLO CUSTOMS
 $tan: #EAE4CE;
-$off_white: #FFFAF0;
+$off_white: #F7F0DD;
 $dark_green: #364033;
 $light_green: #809778;
 $orange: #E56B2D;
