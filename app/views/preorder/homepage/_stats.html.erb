@@ -18,24 +18,42 @@
   </div>
 
   <div id="backing">
-    <h3 class="backing_header">HELP US BUILD A NEW WAY TO ADVENTURE</h3>
+    <div class="backing_header">ADVENTURE WITH <span class="local_word"> LOCALS </span> NOT TOUR GUIDES</div>
 
+    <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %><i class="fa fa-hand-o-right angle_right"></i></a>
+    <!--
     <p class="raised_number"><%= number_to_currency Order.revenue, :precision => 0 %></p>
-    <p class="raised_goal_text">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>     
+    <p class="raised_goal_text">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>  
+  -->
 
-    <% if Order.revenue.to_f < Order.goal.to_f %>
-      <div id='progress_bg' class='small'>
-        <div id='progress' class='' style='width: <%= Order.percent %>%;'>
+    <div class="bar_icon_icon">
+
+      <% if Order.revenue.to_f < Order.goal.to_f %>
+        <div id='progress_bg' class='small'>
+          <div id='progress' class='' style='width: <%= Order.percent %>%;'>
+          </div>
+          <div class="goal_num_text"> 
+            <%= number_to_currency Order.revenue, :precision => 0 %> 
+            Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %>
+          </div>
         </div>
-      </div>
-    <% else %>
-      <div id="progress_bg">
-        <div id="progress">
+      <% else %>
+        <div id="progress_bg">
+          <div id="progress">
+          </div>
+          <div class="goal_num_text"> 
+            <%= number_to_currency Order.revenue, :precision => 0 %>
+            Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %>
+          </div>
+          <!-- <div id='progress_text'><%= Order.percent %>% <%= Settings.progress_text %></div> -->
         </div>
-        <div id='progress_text'><%= Order.percent %>% <%= Settings.progress_text %></div>
-      </div>
-    <% end %>
-      <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %><i class="fa fa-angle-right angle_right"></i></a>
+      <% end %>
+
+
+      <div class="fb-share-button" data-href="http://www.advlo.com" data-width="50" data-type="button"></div>
+      <a href="http://advlo.com" class="twitter-share-button" data-count = "none" data-text="Support Advlo's Selfstarter Campaign at www.advlo.com!" data-via="advlo_" data-size="small" data-hashtags="adventurelocal">Tweet</a>
+    </div>
+      
 
        <!-- <%= like_button %> -->
   </div>

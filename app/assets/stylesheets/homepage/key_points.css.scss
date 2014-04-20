@@ -4,7 +4,9 @@
 }
 
 .texture_background {
-  background: asset-url('background_texture.png') repeat;
+  background-image: asset-url('how_it_works_background5.jpg');
+  background-size: cover;
+  background-position: bottom;
 }
 
 .big_wrapper .wrapper {
@@ -14,11 +16,13 @@
 .point_copy {
   //width: 440px;
   width: 100%;
+  text-shadow: none !important;
   h3 {
     font-family: cabin_bold;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 10px 0;
     font-size: 60px;
-    background-color: $off_white;
+    color: $gray;
+    //background-color: $off_white;
   }
 }
 
@@ -35,7 +39,7 @@ h3 {
 
 #one {
   //background: url(image_path("1-background.png")) no-repeat bottom left;
-  min-height: 650px !important;
+  min-height: 575px !important;
   width: 936px;
 }
 
@@ -78,11 +82,13 @@ h3 {
 
   .header {
     font-family: cabin_medium;
-    margin: 30px 0;
+    margin: 25px 0;
+    color: $gray;
   }
 
   .header_adjust {
-    margin: 15px 0 30px 0;
+    margin: 10px 0 30px 0;
+    color: $gray;
   }
 
   .icon {
@@ -96,9 +102,10 @@ h3 {
   }
 
   .content {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 16px;
+    color: $gray;
   }
 }
 
@@ -111,7 +118,7 @@ h3 {
 
 .locals_slider li { 
     list-style: none; 
-    height: 650px;
+    height: 600px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
@@ -143,7 +150,7 @@ h3 {
       font-size: 36px;
       margin-left: 40px;
       margin-top: 150px;
-      margin-bottom: 150px;
+      margin-bottom: 120px;
       width: 650px;
     }
 
@@ -166,12 +173,64 @@ h3 {
       color: $gray;
     }
 
+
+    .wiston_quote_right {
+      float: right;
+      font-size: 36px;
+      margin-right: 40px;
+      margin-top: 100px;
+      margin-bottom: 80px;
+      width: 650px;
+    }
+
+    .wiston_title_right {
+      font-family: cabin_medium;
+      clear: right;
+      font-size: 38px;
+      color: $orange;
+      line-height: 1;
+    }
+
+    .wiston_caption_right {
+      clear: right;
+      margin-top: 10px;
+      font-size: 24px;
+      color: $gray;
+    }
+
+    .leo_quote_right {
+      float: right;
+      font-size: 36px;
+      margin-right: 40px;
+      margin-top: 70px;
+      margin-bottom: 50px;
+      width: 600px;
+    }
+
+    .leo_title_right {
+      font-family: cabin_medium;
+      clear: right;
+      font-size: 38px;
+      color: $orange;
+      line-height: 1;
+    }
+
+    .leo_caption_right {
+      clear: right;
+      margin-top: 10px;
+      font-size: 24px;
+      //margin-right: 140px;
+      float: left;
+      color: $gray;
+    }
+
+
     .local_quote_right {
       float: right;
       font-size: 36px;
       margin-right: 40px;
-      margin-top: 150px;
-      margin-bottom: 150px;
+      margin-top: 100px;
+      margin-bottom: 80px;
       width: 650px;
     }
 
@@ -191,6 +250,7 @@ h3 {
     }
 
     .local_name_caption_right {
+      width: 500px;
       float: right;
       clear: right;
       margin-right: 120px;

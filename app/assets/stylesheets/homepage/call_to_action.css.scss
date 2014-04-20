@@ -36,21 +36,14 @@
   }
 }
 
-.reserve
-{
-  padding: 20px 15px 20px 30px;
-  width: 265px;
-  font-size: 20px;
-  margin: 15px 0 0 550px;
-}
-
 #middle_reserve {
-  padding-top: 70px;
-  padding-bottom: 150px;
-  background-color: $off_white;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: $body_background;
+  border-bottom: none !important;
 
   #contact {
-    margin-left: 45px;
+    margin-left: 95px;
 
     #contact_email
     {

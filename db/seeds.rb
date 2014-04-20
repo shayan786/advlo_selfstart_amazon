@@ -11,57 +11,87 @@ PaymentOption.create(
         {
             amount: 10.00,
             amount_display: '$10',
-            description: 'Advlo Weatherproof Decal Sticker + Big Virtual Thank You Hug <3 !',
+            description: 'VIP Access + Weatherproof Sticker + Big Virtual Thank You Hug',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png'
         },
         {
             amount: 20.00,
             amount_display: '$20',
-            description: 'Advlo Water Bottle + GoPro Raffle Entry (3 To Raffle)',
+            description: 'VIP Access + Water Bottle + GoPro HERO3 Giveaway Entry',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 'water_bottle.png',
+            icon_4: 'go_pro.png'
         },
         {
             amount: 35.00,
             amount_display: '$35',
-            description: 'Advlo T-Shirt + GoPro Raffle Entry (3 To Raffle)',
+            description: 'VIP Access + T-Shirt + GoPro HERO3 Giveaway Entry',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 't_shirt.png',
+            icon_4: 'go_pro.png'
         },
         {
             amount: 50.00,
             amount_display: '$50',
-            description: 'Advlo T-Shirt + Decal Sticker + Raffle for an Adventure of your choice',
+            description: 'VIP Access + Weatherproof Sticker + T-Shirt + Regional Adventure of Your Choice Giveaway Entry',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 't_shirt.png',
+            icon_4: 'r_adventure.png'
         },
         {
             amount: 75.00,
             amount_display: '$75',
-            description: 'Advlo Canvas (Photo taken by a local from around the world) + Raffle for an Adventure of your choice',
+            description: 'VIP Access + T-Shirt + Water Bottle + Regional Adventure of Your Choice Giveaway Entry',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 't_shirt.png',
+            icon_4: 'water_bottle.png',
+            icon_5: 'r_adventure.png'
         },
         {
             amount: 100.00,
             amount_display: '$100',
-            description: 'Advlo Canvas (Photo taken by a local from around the world) + Raffle for an Adventure to the Colorodo Rockies with the Advlo Team',
+            description: 'VIP Access + T-Shirt + Choice of Photo Canvas + National Adventure of Your Choice Giveaway Entry ',
             shipping_desc: 'add $5 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 't_shirt.png',
+            icon_4: 'canvas.png',
+            icon_5: 'adventure.png',
         },
         {
             amount: 250.00,
             amount_display: '$250',
-            description: 'Advlo T-Shirt + Decal Sticker + Bottle + Canvas + Raffle for an Adventure to the Colorodo Rockies with the Advlo Team',
+            description: 'VIP Access + Weatherproof Sticker + Water Bottle + T-Shirt + Choice of Photo Canvas + National Adventure of Your Choice Giveaway Entry',
             shipping_desc: 'add $10 to ship outside the US',
             delivery_desc: '',
-            limit: -1
+            limit: -1,
+            icon_1: 'vip.png',
+            icon_2: 'sticker.png',
+            icon_3: 'water_bottle.png',
+            icon_4: 't_shirt.png',
+            icon_5: 'canvas.png',
+            icon_6: 'adventure.png'
         }
     ])

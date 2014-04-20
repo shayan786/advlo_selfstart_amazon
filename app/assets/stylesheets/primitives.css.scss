@@ -143,7 +143,7 @@ h5 {
 }
 
 .wrapper {
-  width: 935px;
+  width: 1020px;
   margin: 0 auto;
 }
 
@@ -154,7 +154,7 @@ h5 {
 .gray_background 
 {
   width:  100%;
-  padding: 50px 0;
+  padding: 100px 0 50px 0;
   background: $gray_background_top_color; /* Old browsers */
   background: -moz-linear-gradient(top,  $gray_background_top_color 0%, $gray_background_middle_color 50%, $gray_background_bottom_color 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gray_background_top_color), color-stop(50%,$gray_background_middle_color), color-stop(100%,$gray_background_bottom_color)); /* Chrome,Safari4+ */
@@ -170,7 +170,8 @@ h5 {
 {
   width:  100%;
   padding: 25px 0 50px 0;
-  background: asset-url('background_texture.png') repeat;
+  background-image: asset-url('background_3.png');
+  background-size: cover;
   border-bottom: 1px solid $gray_background_border_color;
 }
 

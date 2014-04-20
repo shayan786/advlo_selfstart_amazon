@@ -17,7 +17,30 @@
               <% if p.limit > -1 %>
                 <p class="limited">Limited (<%= p.limit - order_count(p) %> of <%= p.limit %> remaining)</p>
               <% end %>
+
+              <!--
               <p class="delivery_date"><%= p.delivery_desc %></p>
+              -->
+            </div>
+            <div class="icons">
+              <% if p.icon_1 %>
+                <%= image_tag "checkout_icons/" + p.icon_1 %>
+              <% end %>
+              <% if p.icon_2 %>
+                <%= image_tag "checkout_icons/" + p.icon_2 %>
+              <% end %>
+              <% if p.icon_3 %>
+                <%= image_tag "checkout_icons/" + p.icon_3 %>
+              <% end %>
+              <% if p.icon_4 %>
+                <%= image_tag "checkout_icons/" + p.icon_4 %>
+              <% end %>
+              <% if p.icon_5 %>
+                <%= image_tag "checkout_icons/" + p.icon_5 %>
+              <% end %>
+              <% if p.icon_6 %>
+                <%= image_tag "checkout_icons/" + p.icon_6 %>
+              <% end %>
             </div>
           </li>
         <% end %>

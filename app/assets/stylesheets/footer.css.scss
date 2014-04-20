@@ -19,4 +19,18 @@
   {
     font-size: 18px;
   }
+
+  .fa-facebook {
+    margin-left: 20px;
+  }
+
+  .fa {
+    font-size: 22px;
+    margin-right: 20px;
+
+    &:hover{
+      color: $light_orange;
+    }
+  }
+
 }

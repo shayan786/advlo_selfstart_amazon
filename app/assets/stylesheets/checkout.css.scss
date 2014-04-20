@@ -1,6 +1,6 @@
 .main_content
 {
-  width: 560px;
+  width: 100%;
   float: left;
   text-shadow: none !important;
 
@@ -35,6 +35,7 @@
       border: none;
     }
   }
+
 }
 
 .main_content.payment_options
@@ -45,9 +46,17 @@
   }
   div.checkout_controls
   {
+    text-align: center;
+    margin-bottom: 40px;
+
     .checkout_controls_inner
     {
       padding-top: 12px;
+
+
+      img {
+        float: right;
+      }
     }
     height: 100px;
     div.checkout_controls_wrapper.fix_to_bottom.checkout_ready
@@ -84,10 +93,10 @@
     {
       list-style: none;
       margin: -10px -20px;
-      word-wrap: break-word;
+      //word-wrap: break-word;
       li:hover
       {
-        background-color: #ffeac4;
+        background-color: #F5F5DC;
         cursor: hand;
         cursor: pointer;
       }
@@ -98,7 +107,7 @@
       li
         {
         border-bottom: 1px solid #c3c3c3;
-        padding: 25px 20px;
+        padding: 15px 0px;
         overflow: auto;
         margin-left: 0;
         position: relative;
@@ -169,15 +178,20 @@
             padding: 3px;
           }
         }
+
         div.description
         {
-          margin-top: -16px;
-          padding-left: 112px;
-          line-height: 24px !important;
+          //margin-top: -16px;
+          padding-left: 25px;
+          //line-height: 24px !important;
+          width: 40%;
+          display: inline-block;
+
           strong
           {
             font-weight: bold;
           }
+
           p.full
           {
             margin-bottom: 5px;
@@ -195,6 +209,7 @@
             -webkit-margin-start: 0px;
             -webkit-margin-end: 0px;
           }
+
           p.delivery_date
           {
             font-size: 12px;
@@ -216,16 +231,36 @@
             -webkit-margin-end: 0px;
           }
         }
+
+        div.icons {
+          width: 45%;
+          float: right;
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          display: inline-block;
+
+
+          img {
+            width: 60px !important;
+            margin-right: 5px;
+          }
+        }
       }
     }
   }
 }
 
-.sidebar
-  {
-  margin-top: 15px;
-  float: right;
-  width: 335px;
+.sidebar {
+  width: 100%;
+
+  .left {
+    width: 45%;
+    float: left;
+  }
+
+  .right {
+    width: 45%;
+  }
   
   .sidebar_header {
     font-size: 26px;
