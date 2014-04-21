@@ -3,3 +3,6 @@ db/*.sqlite3
 log/*.log
 tmp/
 to_do.rtf
+
+db/development.sqlite3
+log/development.log
