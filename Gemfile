@@ -48,3 +48,6 @@ gem 'rails_admin'
 
 # font-awesome
 gem 'font-awesome-rails'
+
+#devise authentication
+gem 'devise'

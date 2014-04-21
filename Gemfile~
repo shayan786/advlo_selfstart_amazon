@@ -43,5 +43,8 @@ gem 'rails_config'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'rails-bootstrap'
 
+# admin panel 
+gem 'rails_admin'
+
 # font-awesome
 gem 'font-awesome-rails'
