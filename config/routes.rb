@@ -1,6 +1,6 @@
 Selfstarter::Application.routes.draw do
-  devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :admin_users
   root :to => 'preorder#index'
   match '/preorder'               => 'preorder#index', :via => [:get,:post]
   get 'preorder/checkout'
