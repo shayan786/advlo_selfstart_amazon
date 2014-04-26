@@ -47,7 +47,7 @@ use_video_placeholder:
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
 amazon_access_key: "AKIAJK2LDLLY5ZGIZ6DQ"
 amazon_secret_key: "0Z3Oh7mOGsJV9wy2H8VbmcqTdUwwZHi96gBxHZj0"
-price: 	19.95
+#price: 	19.95
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
 # There is a PaymentOption model for storing info about payment options.  To set up your payment options you should
@@ -60,7 +60,7 @@ payment_description: "Thank you for being an Advlo backer! We can't do this with
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
 # this value will be added to the price to create a charge limit
-charge_limit: 10.00
+charge_limit: 20.00
 
 # Stats settings
 
