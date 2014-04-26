@@ -52,7 +52,7 @@ class Order < ActiveRecord::Base
     end while Order.find_by(:uuid => self.uuid).present?
   end
 
-  # goal is a dollar amount, not a number of backers, beause you may be using the multiple payment options component
+  # goal is a dollar amount, not a number of backers, because you may be using the multiple payment options component
   # by setting Settings.use_payment_options == true
   def self.goal
     Settings.project_goal
