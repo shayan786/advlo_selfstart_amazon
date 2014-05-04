@@ -45,8 +45,8 @@ use_video_placeholder:
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
-amazon_access_key: ""
-amazon_secret_key: ""
+amazon_access_key: "AKIAJHXXG3V2FXBMPFYA"
+amazon_secret_key: "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"
 #price: 	19.95
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
@@ -55,12 +55,12 @@ amazon_secret_key: ""
 use_payment_options: true
 
 #What ppl see on amazon checkout
-payment_description: "Thank you for being an Advlo backer! We can't do this without you"
+payment_description: "Thank you for being an Advlo backer! We can't do this without you!"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping
 # this value will be added to the price to create a charge limit
-charge_limit: 20.00
+charge_limit: 10.00
 
 # Stats settings
 

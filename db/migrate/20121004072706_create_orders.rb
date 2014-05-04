@@ -18,6 +18,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string  :tracking_number
       t.string  :phone
       t.string  :name
+      t.string  :shirt_size
       t.date    :expiration
 
       t.timestamps

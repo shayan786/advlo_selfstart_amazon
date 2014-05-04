@@ -10,9 +10,17 @@ class Order < ActiveRecord::Base
     @order                = Order.new
     @order.name           = options[:name]
     @order.user_id        = options[:user_id]
-    @order.price          = options[:price]
     @order.number         = Order.next_order_number
+    @order.shirt_size     = options[:shirt_size] if !options[:shirt_size].nil?
     @order.payment_option = options[:payment_option] if !options[:payment_option].nil?
+    @order.shipping       = 10.to_f if options[:international_ship] == 1
+
+    if options[:international_ship] == 1
+      @order.price        = options[:price] + 10.to_f
+    else
+      @order.price        = options[:price]
+    end
+
     @order.save!
 
     @order

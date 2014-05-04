@@ -1,4 +1,4 @@
-<div class="gray_background">
+d<div class="gray_background">
   <div class="wrapper clearfix">
     <div class="main_content <%= "payment_options" if Settings.use_payment_options %>">
     <!--
@@ -27,6 +27,27 @@
               <%= hidden_field_tag "quantity", params[:quantity] %>
               <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
               <%= image_tag "checkout_icons/amazon_payments.png" %>
+              <div class="int_checkbox">
+                <%= check_box_tag "international" %>Shipping to Alaska/Hawaii or Outside USA?
+              </div>
+              <div class="shirt_dropdown">
+                Select Shirt Size: 
+                <%= select_tag "shirt_size", "<option value='S'>Small</option><option value='M'>Medium</option><option value='L'>Large</option><option value='XL'>X-Large</option>".html_safe  %>
+              </div>
+
+              <script> 
+                $(document).ready(function(){
+                  $("ol > li").click(function() {
+                    if ($("input:radio[name='payment_option']:checked").val() > 2) {
+                      $(".shirt_dropdown").show();
+                    }
+                    else {
+                      $(".shirt_dropdown").hide();
+                    }
+                  });
+                }); 
+              </script>
+
             </div>
           </div>
         </div>
