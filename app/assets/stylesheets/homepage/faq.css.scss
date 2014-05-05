@@ -23,6 +23,18 @@
           font-weight: bold;
         }
       }
+
+      .t_shirt_front {
+        width: 400px;
+      }
+
+      .t_shirt_back {
+        @extend .t_shirt_front;
+      }
+
+      .waterbottle {
+        width: 125px;
+      }
     }
   }
 }
