@@ -83,7 +83,7 @@ PaymentOption.create(
         {
             amount: 250.00,
             amount_display: '$250',
-            description: 'VIP Access + Weatherproof Sticker + Water Bottle + T-Shirt + Choice of Photo Canvas + National Adventure of Your Choice Giveaway Entry',
+            description: 'VIP Access + Weatherproof Sticker + Water Bottle + T-Shirt + Choice of Photo Canvas + Entry to Each of the 3 Giveaways',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1,
@@ -92,6 +92,8 @@ PaymentOption.create(
             icon_3: 'water_bottle.png',
             icon_4: 't_shirt.png',
             icon_5: 'canvas.png',
-            icon_6: 'adventure.png'
+            icon_6: 'go_pro.png',
+            icon_7: 'r_adventure.png',
+            icon_8: 'adventure.png'
         }
     ])

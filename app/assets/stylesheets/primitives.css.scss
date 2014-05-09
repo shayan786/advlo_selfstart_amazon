@@ -26,11 +26,20 @@
  }
 
 html, body {
-  width: 100%;
+  width: 100%; 
 }
 
 body {
   background: $body_background;
+}
+
+
+@media only screen and (max-device-width: 720px) {
+/* define mobile specific styles come here */
+  body {
+    width: 108% !important;
+  }
+
 }
 
 .disabled
@@ -49,7 +58,7 @@ body, input, textarea
   font-size: $font_size;
   font-family: $primary_font, $secondary_font, $tertiary_font;
   color: $text_color;
-  text-shadow: $text_shadow;
+  text-shadow: none !important;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -154,7 +163,7 @@ h5 {
 .gray_background 
 {
   width:  100%;
-  padding: 100px 0 50px 0;
+  padding: 80px 0 50px 0;
   background: $gray_background_top_color; /* Old browsers */
   background: -moz-linear-gradient(top,  $gray_background_top_color 0%, $gray_background_middle_color 50%, $gray_background_bottom_color 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gray_background_top_color), color-stop(50%,$gray_background_middle_color), color-stop(100%,$gray_background_bottom_color)); /* Chrome,Safari4+ */

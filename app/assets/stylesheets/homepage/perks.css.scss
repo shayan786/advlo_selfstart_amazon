@@ -1,6 +1,6 @@
 #perks {
   min-height: 600px;
-  padding: 35px 0 0px 0;
+  padding: 35px 0px 0px 0px;
   background-color: white;
 
   .perks_text {
@@ -12,11 +12,15 @@
 
     .perks_header {
       font-family: cabin_bold;
-
     }
 
     .perks_content {
       font-family: cabin_regular;
+      line-height: 30px;
+
+      b {
+        font-weight: bold;
+      }
     }
 
     .perks_btn {
@@ -42,7 +46,7 @@
       width: 260px;
       height: 238px;
       z-index: 10;
-      margin-top: 336px;
+      margin-top: 351px;
 
       &:hover {
         background-image: url(image_path("mountain_20.png")); 
@@ -64,7 +68,7 @@
     width: 375px;
     height: 389px;
     z-index: 9;
-    margin-top: 185px;
+    margin-top: 200px;
 
       &:hover {
          background-image: url(image_path("mountain_50.png"));
@@ -82,11 +86,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     float: right;
+    position: absolute;
     width: 465px;
     height: 519px;
-    margin-right: 30px;
-    margin-top: 55px;
-    z-index: 10;
+    right: 30px;
+    margin-top: 70px;
+    z-index: 8;
 
       &:hover {
          background-image: url(image_path("mountain_100.png")); 
@@ -98,5 +103,32 @@
       -webkit-transition: background-image 0.2s linear 0.1s; /* For Safari 3.1 to 6.0 */
       transition: background-image 0.2s linear 0.1s;
   }
+
+}
+
+@media only screen and (max-device-width: 720px) {
+/* define mobile specific styles come here */
+
+  #perks {
+    min-height: 780px;
+
+    .mountain_20_link {
+      margin-top: 531px !important;
+      width: 290px !important;
+      right: 635px;
+    }
+    
+    .mountain_50_link {
+      margin-top: 380px !important;
+      width: 405px !important;
+      right: 335px;
+    }
+
+    .mountain_100_link {
+      margin-top: 250px !important;
+      width: 495px !important;
+      right: -40px !important;
+    }
+  } 
 
 }

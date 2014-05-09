@@ -16,6 +16,7 @@
 //= require jquery.ui.all
 //= require jquery.details
 //= require jquery.textchange
+//= require jquery.event.move
 //= require preorder
 //= require unslider.min
 //= require_tree .

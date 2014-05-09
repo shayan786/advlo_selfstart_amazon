@@ -19,10 +19,6 @@ $link_color: #0008D6;
 $text_shadow: 0 1px 0px #fff;
 $font_size: 22px;
 
-// Lockitron uses ProximaNova Regular, but that costs money, so we're defaulting to Helveitca Neue instead.
-//$primary_font:   "Helvetica Neue";
-//$secondary_font: "Helvetica";
-//$tertiary_font:  "Arial";
 //CUSTOM ADVLO FONT STUFF
 
 @font-face
@@ -87,8 +83,6 @@ $header_font: "cabin_bold";
 $paragraph_font: "cabin_regular";
 
 
-
-
 // Gray background is a gradient -- top == 0%, middle == 50%, bottom == 100%
 //$gray_background_top_color: 	 #F6F6F6;
 //$gray_background_middle_color: #FAFAFA;
@@ -115,11 +109,8 @@ $button_border_radius: 					5px;
 
 // Default State
 $button_ie9_gradient:  					url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwZTk2ZTQiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMmEwZmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
-$button_top_gradient: 					#E56B2D; //orange
-$button_bottom_gradient: 				#E56B2D; //orange
-
-//$button_top_gradient: 				#0E96E4;
-//$button_bottom_gradient: 				#02A0FA;
+$button_top_gradient: 					#E56B2D; //light
+$button_bottom_gradient: 				#E56B2D; //light
 
 // Hover State
 $button_ie9_gradient_hover: 		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PGxpbmVhckdyYWRpZW50IGlkPSJoYXQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjEwMCUiIHgyPSI1MCUiIHkyPSIwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyZGE0ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMWFlZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
@@ -134,22 +125,19 @@ $button_ie9_gradient_active:		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0i
 $button_top_gradient_active: 	 	#FF7732;  //light orange
 $button_bottom_gradient_active: 	#FF7732;  //light orange
 
-//$button_top_gradient_active: 	 	#039FF7;
-//$button_bottom_gradient_active: 	#039ff7;
 
 // FAQ Entry
-$summary_color: #0088D6;
+$summary_color: #333;
 
-
-// ADVLO CUSTOMS
+// ADVLO CUSTOMS COLORS
 $tan: #EAE4CE;
 $off_white: #F7F0DD;
 $dark_green: #364033;
 $light_green: #809778;
+$logo_orange: #C35B26;
 $orange: #E56B2D;
 $dark_orange: #E86100;
 $light_orange: #FF7732;
 $gray: #4D4D4D;
+$light_gray: #F8F8F8;
 $charcoal: #333;
-
-

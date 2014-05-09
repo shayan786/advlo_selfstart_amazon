@@ -12,6 +12,8 @@ class CreatePaymentOptions < ActiveRecord::Migration
       t.string :icon_4
       t.string :icon_5
       t.string :icon_6
+      t.string :icon_7
+      t.string :icon_8
       t.integer :limit
 
       t.timestamps

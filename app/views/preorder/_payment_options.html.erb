@@ -6,12 +6,16 @@
           <li>
             <%= radio_button_tag "payment_option", p.id, false, class: 'payment_radio', disabled: sold_out(p) %>
             <%= label_tag("payment_option_#{index}", p.amount_display) %>
+            
+            <!--
             <div class="shipping">
               <% if sold_out p %>
                 <span class="sold-out">Sold Out</span>
               <% end %>
               <span><%= p.shipping_desc %></span>
             </div>
+            -->
+            
             <div class="description">
               <p class="full"><%= raw p.description %></p>
               <% if p.limit > -1 %>
@@ -40,6 +44,12 @@
               <% end %>
               <% if p.icon_6 %>
                 <%= image_tag "checkout_icons/" + p.icon_6 %>
+              <% end %>
+              <% if p.icon_7 %>
+                <%= image_tag "checkout_icons/" + p.icon_7 %>
+              <% end %>
+              <% if p.icon_8 %>
+                <%= image_tag "checkout_icons/" + p.icon_8 %>
               <% end %>
             </div>
           </li>

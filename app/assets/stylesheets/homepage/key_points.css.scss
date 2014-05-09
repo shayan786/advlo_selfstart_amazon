@@ -86,6 +86,7 @@ h3 {
   }
 
   .header_adjust {
+    font-family: cabin_medium;
     margin: 9px 0 25px 0;
     color: $gray;
   }
@@ -105,8 +106,8 @@ h3 {
 
   .content {
     margin-top: 15px;
-    padding: 0 20px;
-    font-size: 16px;
+    padding: 0 15px;
+    font-size: 18px;
     color: $gray;
   }
 }
@@ -127,21 +128,23 @@ h3 {
 
     .local_quote_left {
       float: left;
-      font-size: 36px;
+      font-size: 40px;
       margin-left: 40px;
       margin-top: 150px;
-      margin-bottom: 120px;
+      margin-bottom: 100px;
       width: 650px;
+      line-height: 45px;
+      color: $gray;
     }
 
     .local_title_left {
       font-family: cabin_medium;
       clear: left;
       float: left;
-      font-size: 38px;
+      font-size: 34px;
       margin-left: 40px;
       color: $orange;
-      line-height: 1;
+      line-height: 45px;
     }
 
     .local_caption_left {
@@ -156,17 +159,19 @@ h3 {
 
     .wiston_quote_right {
       float: right;
-      font-size: 36px;
+      font-size: 40px;
       margin-right: 40px;
       margin-top: 100px;
       margin-bottom: 80px;
       width: 650px;
+      line-height: 45px;
+      color: $gray;
     }
 
     .wiston_title_right {
       font-family: cabin_medium;
       clear: right;
-      font-size: 38px;
+      font-size: 34px;
       color: $orange;
       line-height: 1;
     }
@@ -180,17 +185,19 @@ h3 {
 
     .leo_quote_right {
       float: right;
-      font-size: 36px;
+      font-size: 37px;
       margin-right: 40px;
-      margin-top: 70px;
-      margin-bottom: 50px;
+      margin-top: 40px;
+      margin-bottom: 30px;
       width: 600px;
+      line-height: 45px;
+      color: $gray;
     }
 
     .leo_title_right {
       font-family: cabin_medium;
       clear: right;
-      font-size: 38px;
+      font-size: 34px;
       color: $orange;
       line-height: 1;
     }
@@ -199,7 +206,6 @@ h3 {
       clear: right;
       margin-top: 10px;
       font-size: 24px;
-      //margin-right: 140px;
       float: left;
       color: $gray;
     }
@@ -212,6 +218,7 @@ h3 {
       margin-top: 100px;
       margin-bottom: 80px;
       width: 650px;
+      line-height: 45px;
     }
 
     .local_title_right {
@@ -290,4 +297,80 @@ h3 {
     color: $off_white;
     text-align: justify;
   }
+}
+
+@media only screen and (max-device-width: 720px) {
+/* define mobile specific styles come here */
+    .local_quote_left {
+      font-size: 36px !important;
+      margin-top: 130px !important;
+      margin-bottom: 80px !important;
+      width: 550px !important;
+    }
+
+
+    .wiston_quote_right {
+      font-size: 36px !important;
+      width: 550px !important;
+    }
+
+
+    .leo_quote_right {
+      font-size: 34px !important;
+      margin-right: 20px !important;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      width: 530px !important;
+      line-height: 45px;
+      color: $gray;
+    }
+
+    .leo_title_right {
+      font-family: cabin_medium;
+      clear: right;
+      font-size: 30px;
+      color: $orange;
+      line-height: 1;
+      margin-left: 50px !important;
+    }
+
+    .leo_caption_right {
+      clear: right;
+      margin-top: 10px;
+      font-size: 22px;
+      float: left;
+      color: $gray;
+      margin-left: 50px !important
+    }
+
+
+    .local_quote_right {
+      float: right;
+      font-size: 36px;
+      margin-right: 40px;
+      margin-top: 100px;
+      margin-bottom: 80px;
+      width: 650px;
+      line-height: 45px;
+    }
+
+    .local_title_right {
+      font-family: cabin_medium;
+      clear: right;
+      font-size: 38px;
+      color: $orange;
+      line-height: 1;
+    }
+
+    .local_caption_right {
+      clear: right;
+      margin-top: 10px;
+      font-size: 24px;
+      color: $gray;
+    }
+
+    .local_name_caption_right {
+      margin-right: 80px !important;
+    }
+
 }

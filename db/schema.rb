@@ -68,6 +68,8 @@ ActiveRecord::Schema.define(version: 20140422003707) do
     t.string   "icon_4"
     t.string   "icon_5"
     t.string   "icon_6"
+    t.string   "icon_7"
+    t.string   "icon_8"
     t.integer  "limit"
     t.datetime "created_at"
     t.datetime "updated_at"
