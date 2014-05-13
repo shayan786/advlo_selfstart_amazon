@@ -106,6 +106,10 @@
 
 }
 
+#perks_preload {
+  display: none;
+}
+
 @media only screen and (max-device-width: 720px) {
 /* define mobile specific styles come here */
 
@@ -130,5 +134,36 @@
       right: -40px !important;
     }
   } 
+
+}
+
+@media only screen and (min-device-width: 1441px) {
+/* define mobile specific styles come here */
+
+  #perks {
+    min-height: 700px;
+
+    .mountain_20_link {
+      margin-top: 431px !important;
+      width: 290px !important;
+      //right: 635px;
+    }
+    
+    .mountain_50_link {
+      margin-top: 280px !important;
+      width: 405px !important;
+      //right: 335px;
+    }
+
+    .mountain_100_link {
+      margin-top: 150px !important;
+      width: 495px !important;
+      //right: -40px !important;
+    }
+  } 
+
+  .perks_text {
+    margin-left: 130px !important;
+  }
 
 }

@@ -32,7 +32,19 @@ d<div class="gray_background">
               </div>
               <div class="shirt_dropdown">
                 Select Shirt Size: 
-                <%= select_tag "shirt_size", "<option value='S'>Small</option><option value='M'>Medium</option><option value='L'>Large</option><option value='XL'>X-Large</option>".html_safe  %>
+                <%= select_tag "shirt_size", 
+                "<option value='S-green'>Small - Green</option>
+                <option value='S-orange'>Small - Burnt Orange</option>
+                <option value='S-black'>Small - Black</option>
+                <option value='M-green'>Medium - Green</option>
+                <option value='M-orange'>Medium - Burnt Orange</option>
+                <option value='M-black'>Medium - Black</option>
+                <option value='L-green'>Large - Green</option>
+                <option value='L-orange'>Large - Burnt Orange</option>
+                <option value='L-black'>Large - Black</option>
+                <option value='XL-green'>X-Large - Green</option>                
+                <option value='XL-orange'>X-Large - Burnt Orange</option>                
+                <option value='XL-black'>X-Large - Black</option>".html_safe  %>
               </div>
 
               <script> 

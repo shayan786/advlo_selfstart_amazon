@@ -249,6 +249,19 @@ h3 {
 
 .locals_slider ul li { float: left; }
 
+@media only screen and (min-device-width: 1441px) {
+/* define mobile specific styles come here */
+
+  .locals_slider ul li {
+    height: 725px !important;
+  }
+
+  #one {
+    min-height: 700px !important;
+  }
+
+}
+
 .dots {
   position: absolute;
   left: 0;
