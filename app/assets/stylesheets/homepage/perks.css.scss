@@ -107,7 +107,12 @@
 }
 
 #perks_preload {
-  display: none;
+  width: 0px;
+  height: 0px;
+  display: inline;
+  background-image: url(image_path("mountain_100.png"));
+  background-image: url(image_path("mountain_50.png"));
+  background-image: url(image_path("mountain_20.png"));
 }
 
 @media only screen and (max-device-width: 720px) {
