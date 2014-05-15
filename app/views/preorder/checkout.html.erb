@@ -25,7 +25,9 @@
               <%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "email" %>
               <%= hidden_field_tag "preorder", true %>
               <%= hidden_field_tag "quantity", params[:quantity] %>
+              <!--
               <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
+              -->
               <%= image_tag "checkout_icons/amazon_payments.png" %>
               <div class="int_checkbox">
                 <%= check_box_tag "international" %>Shipping to Alaska/Hawaii or Outside USA?
