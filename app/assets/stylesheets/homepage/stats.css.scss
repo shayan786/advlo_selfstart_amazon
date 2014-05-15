@@ -59,12 +59,13 @@
     margin-top: 10px;
 
     .fb-share-button {
-      padding-right: 15px;
+      padding-right: 20px;
+      vertical-align: top;
     }
 
     .twitter-share-button {
-      display: inline;
-      vertical-align: middle;
+      display: block-inline;
+      padding-top: 1px;
     }
   }
 
