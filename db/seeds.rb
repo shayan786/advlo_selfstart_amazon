@@ -21,7 +21,7 @@ PaymentOption.create(
         {
             amount: 20.00,
             amount_display: '$20',
-            description: 'VIP Access + Water Bottle + GoPro HERO3 Giveaway Entry',
+            description: 'VIP Access + Weatherproof Sticker + Water Bottle + GoPro HERO3 Giveaway Entry',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1,
@@ -33,7 +33,7 @@ PaymentOption.create(
         {
             amount: 35.00,
             amount_display: '$35',
-            description: 'VIP Access + T-Shirt + GoPro HERO3 Giveaway Entry',
+            description: 'VIP Access + Weatherproof Sticker + T-Shirt + GoPro HERO3 Giveaway Entry',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1,
@@ -57,7 +57,7 @@ PaymentOption.create(
         {
             amount: 75.00,
             amount_display: '$75',
-            description: 'VIP Access + T-Shirt + Water Bottle + Regional Adventure of Your Choice Giveaway Entry',
+            description: 'VIP Access + Weatherproof Sticker + T-Shirt + Water Bottle + Regional Adventure of Your Choice Giveaway Entry',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1,
@@ -70,7 +70,7 @@ PaymentOption.create(
         {
             amount: 100.00,
             amount_display: '$100',
-            description: 'VIP Access + T-Shirt + Choice of Photo Canvas + National Adventure of Your Choice Giveaway Entry ',
+            description: 'VIP Access + Weatherproof Sticker + T-Shirt + Choice of Photo Canvas + National Adventure of Your Choice Giveaway Entry ',
             shipping_desc: '',
             delivery_desc: '',
             limit: -1,
