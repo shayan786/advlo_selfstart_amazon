@@ -46,6 +46,16 @@ class Order < ActiveRecord::Base
     end
   end
 
+  def self.errors!(caller_reference, pay_errors)
+    @order = Order.find_by!(:uuid => caller_reference)
+
+    @order.pay_errors         = pay_errors
+
+    @order.save!
+
+    @order
+  end
+
   def self.next_order_number
     if Order.count > 0
       Order.order("number DESC").limit(1).first.number.to_i + 1

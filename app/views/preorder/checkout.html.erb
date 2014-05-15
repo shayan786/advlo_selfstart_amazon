@@ -25,9 +25,7 @@
               <%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "email" %>
               <%= hidden_field_tag "preorder", true %>
               <%= hidden_field_tag "quantity", params[:quantity] %>
-              <!--
               <%= submit_tag "Checkout", :class => "blue_button disabled", :id => "amazon_button" %>
-              -->
               <%= image_tag "checkout_icons/amazon_payments.png" %>
               <div class="int_checkbox">
                 <%= check_box_tag "international" %>Shipping to Alaska/Hawaii or Outside USA?
@@ -35,7 +33,8 @@
               <div class="shirt_dropdown">
                 Select Shirt Size: 
                 <%= select_tag "shirt_size", 
-                "<option value='S-green'>Small - Green</option>
+                "<option value=''></option>
+                <option value='S-green'>Small - Green</option>
                 <option value='S-orange'>Small - Burnt Orange</option>
                 <option value='S-black'>Small - Black</option>
                 <option value='M-green'>Medium - Green</option>
@@ -54,6 +53,7 @@
                   $("ol > li").click(function() {
                     if ($("input:radio[name='payment_option']:checked").val() > 2) {
                       $(".shirt_dropdown").show();
+                      alert("Don't forget to select your t-shirt size below!");
                     }
                     else {
                       $(".shirt_dropdown").hide();

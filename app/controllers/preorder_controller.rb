@@ -50,7 +50,22 @@ class PreorderController < ApplicationController
     end
     # "A" means the user cancelled the preorder before clicking "Confirm" on Amazon Payments.
     if params['status'] != 'A' && @order.present?
-      redirect_to :action => :share, :uuid => @order.uuid
+      #charge the user using their tokenID
+      begin 
+        response = AmazonFlexPay.pay(@order.price, 'USD', params['tokenID'],params['callerReference'])
+      #if there were any errors in payment
+      rescue AmazonFlexPay::API::Error => e
+        pay_errors = ''
+        e.errors.each do |error|
+          # notify yourself about error.code and error.message
+          pay_errors = pay_errors + error.message
+        end
+      end
+
+      #save the errors to my order
+      @order_paid = Order.errors!(params[:callerReference],pay_errors)
+
+      redirect_to :action => :share, :uuid => @order_paid.uuid
     else
       redirect_to root_url
     end

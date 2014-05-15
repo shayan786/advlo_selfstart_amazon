@@ -19,6 +19,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string  :phone
       t.string  :name
       t.string  :shirt_size
+      t.string  :pay_errors
       t.date    :expiration
 
       t.timestamps

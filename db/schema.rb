@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20140422003707) do
     t.string   "phone"
     t.string   "name"
     t.string   "shirt_size"
+    t.string   "pay_errors"
     t.date     "expiration"
     t.datetime "created_at"
     t.datetime "updated_at"
