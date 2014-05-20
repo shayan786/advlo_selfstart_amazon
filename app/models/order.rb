@@ -77,7 +77,8 @@ class Order < ActiveRecord::Base
   end
 
   def self.percent
-    (Order.revenue.to_f / Order.goal.to_f) * 100.to_f
+    #note 5k from idea awards
+    ((Order.revenue.to_f + 5000)/ Order.goal.to_f) * 100.to_f
   end
 
   # See what it looks like when you have some backers! Drop in a number instead of Order.count
@@ -87,7 +88,8 @@ class Order < ActiveRecord::Base
 
   def self.revenue
     if Settings.use_payment_options
-      PaymentOption.joins(:orders).where("token != ? OR token != ?", "", nil).pluck('sum(amount)')[0].to_f
+      #note 5k from idea awards
+      PaymentOption.joins(:orders).where("token != ? OR token != ?", "", nil).pluck('sum(amount)')[0].to_f + 5000
     else
       Order.completed.sum(:price).to_f
     end 
