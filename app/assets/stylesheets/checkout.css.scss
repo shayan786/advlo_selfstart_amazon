@@ -1,3 +1,7 @@
+#checkout_whole {
+  padding-top: 10px;
+}
+
 .main_content
 {
   width: 95%;
@@ -266,29 +270,5 @@
         }
       }
     }
-  }
-}
-
-.sidebar {
-  width: 100%;
-
-  .left {
-    width: 45%;
-    float: left;
-  }
-
-  .right {
-    width: 45%;
-  }
-  
-  .sidebar_header {
-    font-size: 26px;
-  }
-
-  p
-    {
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.3;
   }
 }
