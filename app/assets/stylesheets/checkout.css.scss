@@ -121,12 +121,14 @@
       li:hover
       {
         background-color: $light_gray;
+        filter: none !important; /*ie9*/
         cursor: hand;
         cursor: pointer;
       }
       li.checkout_option_selected
       {
         @extend li:hover;
+        filter: none !important;
       }
       li
         {

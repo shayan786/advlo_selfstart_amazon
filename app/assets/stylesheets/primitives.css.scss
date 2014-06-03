@@ -194,6 +194,7 @@ h5 {
   border: 1px solid $button_active_border;
 }
 
+
 body.lt-ie9 {
   .blue_button {
     background-color: #0D97E6 !important;
@@ -204,6 +205,7 @@ body.lt-ie9 {
   }
 }
 
+
 .blue_button {
   display: block;
   color: $button_color; /* text color */
@@ -211,6 +213,8 @@ body.lt-ie9 {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   background-image: $button_top_gradient; /* gradient fill */
+  background-color: $button_top_gradient; /* gradient fill */
+  filter: none !important; /*ie 9 bg-color fix */
   background-image: -moz-linear-gradient(90deg, $button_top_gradient 0%, $button_bottom_gradient 100%); /* gradient fill */
   background-image: -o-linear-gradient(90deg, $button_top_gradient 0%, $button_bottom_gradient 100%); /* gradient fill */
   background-image: -webkit-linear-gradient(90deg, $button_top_gradient 0%, $button_bottom_gradient 100%); /* gradient fill */
@@ -224,7 +228,7 @@ body.lt-ie9 {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background-image: $button_ie9_gradient_hover; /* gradient fill */
+  background-color: $button_ie9_gradient_hover;
   background-image: -moz-linear-gradient(90deg, $button_top_gradient_hover 0%, $button_bottom_gradient_hover 100%); /* gradient fill */
   background-image: -o-linear-gradient(90deg, $button_top_gradient_hover 0%, $button_bottom_gradient_hover 100%); /* gradient fill */
   background-image: -webkit-linear-gradient(90deg, $button_top_gradient_hover 0%, $button_bottom_gradient_hover 100%); /* gradient fill */
@@ -242,7 +246,7 @@ body.lt-ie9 {
   box-shadow:
     0 1px 1px $button_box_shadow_color /* drop shadow */,
     inset 0 3px 5px $button_box_shadow_inset_color /* inner shadow */;
-  background-image: $button_ie9_gradient_active /* gradient fill */;
+  background-color: $button_ie9_gradient_active;
   background-image: -moz-linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
   background-image: -o-linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
   background-image: -webkit-linear-gradient(90deg, $button_top_gradient_active 0%, $button_bottom_gradient_active 100%); /* gradient fill */
