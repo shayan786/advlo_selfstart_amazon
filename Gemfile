@@ -39,7 +39,7 @@ gem 'amazon_flex_pay'
 # Configuration File
 gem 'rails_config'
 
-# boostrap
+# bootstrap
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'rails-bootstrap'
 
