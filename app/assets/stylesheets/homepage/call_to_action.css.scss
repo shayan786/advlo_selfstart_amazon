@@ -37,31 +37,29 @@
 }
 
 #middle_reserve {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  background-color: $body_background;
+  padding-top: 25px;
   border-bottom: none !important;
 
   #contact {
-    margin-left: 95px;
+    text-align: center;
 
     #contact_email
     {
-      float: left;
       padding: 15px;
       border-radius: 10px;
       border: 1px solid #CCC;
       width: 350px;
       outline: none;
-      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     #contact_button {
-      margin-right: 110px;
-      padding: 15px;
-      width: 310px;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      width: 150px;
       font-size: 28px;
-      float: right;
       border: none;
     }
 
@@ -86,10 +84,10 @@
   }
 
   .contact_msg {
-    color: $gray;
+    color: #FFF;
     display: none;
     font-size: 32px;
-    margin: 0 !important;
+    margin-top: 30px !important;
     padding: 0 !important;
   }
 

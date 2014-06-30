@@ -1,61 +1,34 @@
 <div class="wrapper clearfix">
-  <div id="video">
-    <% if Settings.use_video_placeholder %>
-      <div id="video_image">
-        <img alt="video_place_holder" width='512px' height='385px' src="/assets/video_placeholder.png" />
-      </div>
-      <div id="player" class="hidden" style="display: none;">
-        <object width="786" height="578">
-          <param name="movie" value="<%= Settings.video_embed_url %>?autohide=1&showinfo=0&rel=0&autoplay=1" />
-          <param name="allowFullScreen" value="true" />
-          <param name="allowscriptaccess" value="always" />
-          <embed src="<%= Settings.video_embed_url %>?autohide=1&showinfo=0&rel=0&autoplay=1" type="application/x-shockwave-flash" width="512" height="385" allowscriptaccess="always" allowfullscreen="true"></embed>
-        </object>
-      </div>
-    <% else %>
-      <iframe width='720' height='405' src="<%= Settings.video_embed_url %>"></iframe>
-    <% end %>
-  </div>
-
   <div id="backing">
     <div class="backing_header">ADVENTURE WITH <span class="local_word"> LOCALS </span> NOT TOUR GUIDES</div>
 
-    <a href="/preorder/checkout" class="blue_button reserve"><%= Settings.call_to_action %><i class="fa fa-angle-right angle_right"></i></a>
-    <!--
-    <p class="raised_number"><%= number_to_currency Order.revenue, :precision => 0 %></p>
-    <p class="raised_goal_text">Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %> goal.</p>  
-    -->
+    <div class="backing_subtitle">
+      ADVLO IS LAUNCHING SOON
+    </div>
 
-    <div class="bar_icon_icon">
-
-      <% if Order.revenue.to_f < Order.goal.to_f %>
-        <div id='progress_bg' class='small'>
-          <div id='progress' class='' style='width: <%= Order.percent %>%;'>
-          </div>
-          <div class="goal_num_text"> 
-            <%= number_to_currency Order.revenue, :precision => 0 %> 
-            Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %>
-          </div>
-        </div>
-      <% else %>
-        <div id="progress_bg">
-          <div id="progress">
-          </div>
-          <div class="goal_num_text"> 
-            <%= number_to_currency Order.revenue, :precision => 0 %>
-            Raised of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %>
-          </div>
-          <!-- <div id='progress_text'><%= Order.percent %>% <%= Settings.progress_text %></div> -->
-        </div>
+    <div id="middle_reserve" class="contact_form">
+      <%= form_tag "/preorder/contact", :remote => true, :id=> "contact" do %> 
+        <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+        <%= email_field_tag "contact_email", nil, :placeholder => "Enter email to get notified", :required => "required", :id => "contact_email" %>
+        <%= submit_tag "JOIN", :class => "blue_button", :id => "contact_button" %>
       <% end %>
 
+      <p class="contact_msg center">
+        Thank you, we will keep you updated!
+      </p>
 
-      <div class="fb-share-button" data-href="http://www.advlo.com" data-width="50" data-type="button"></div>
-      <a href="http://advlo.com" class="twitter-share-button" data-count = "none" data-text="I just supported @Advlo_ so i can #AdventureLocal. Join me to travel with locals not tour guides." data-size="small">Tweet</a>
     </div>
-      
 
-       <!-- <%= like_button %> -->
+    <div class="social_icons">
+      <div class="fb-like" data-href="http://www.facebook.com/advlo" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      
+      <a href="https://twitter.com/advlo_" class="twitter-follow-button" data-show-count="false">Follow @advlo_</a>
+    </div>
+
+
+      <!-- <div class="fb-share-button" data-href="http://www.advlo.com" data-width="50" data-type="button"></div>
+      <a href="http://advlo.com" class="twitter-share-button" data-count = "none" data-text="I just supported @Advlo_ so i can #AdventureLocal. Join me to travel with locals not tour guides." data-size="small">Tweet</a> -->
+
   </div>
   
 </div>

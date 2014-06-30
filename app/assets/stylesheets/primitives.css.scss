@@ -184,6 +184,21 @@ h5 {
   border-bottom: 1px solid $gray_background_border_color;
 }
 
+.video_background2
+{
+  width:  100%;
+  padding: 75px 0;
+  background: $gray_background_top_color !important; /* Old browsers */
+  background: -moz-linear-gradient(top,  $gray_background_top_color 0%, $gray_background_middle_color 50%, $gray_background_bottom_color 100%) !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gray_background_top_color), color-stop(50%,$gray_background_middle_color), color-stop(100%,$gray_background_bottom_color)) !important; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $gray_background_top_color 0%,$gray_background_middle_color 50%,$gray_background_bottom_color 100%) !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $gray_background_top_color 0%,$gray_background_middle_color 50%,$gray_background_bottom_color 100%) !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $gray_background_top_color 0%,$gray_background_middle_color 50%,$gray_background_bottom_color 100%) !important; /* IE10+ */
+  background: linear-gradient(to bottom,  $gray_background_top_color 0%,$gray_background_middle_color 50%,$gray_background_bottom_color 100%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#f6f6f6', endColorstr = '#fafafa', GradientType = 0) !important;
+  border-bottom: 1px solid $gray_background_border_color !important;
+}
+
 .button:hover {
   text-decoration: none;
   color: $button_hovered_color;

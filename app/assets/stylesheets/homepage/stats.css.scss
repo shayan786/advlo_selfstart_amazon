@@ -1,9 +1,11 @@
 #backing
 {
-  min-height: 175px;
+  min-height: 550px;
   width: 100%;
   margin: 20px auto 0 auto;
   text-shadow: none !important;
+  padding-top: 100px;
+
   #backers
   {
     border-left: none;
@@ -23,7 +25,7 @@
 
   .backing_header {
     font-family: cabin_regular;
-    font-size: 38px;
+    font-size: 40px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -32,9 +34,14 @@
     opacity: 0.8;
 
     .local_word {
-      font-size: 44px;
+      font-size: 52px;
       font-weight: bold;
     }
+  }
+
+  .backing_subtitle {
+    @extend .backing_header;
+    font-size: 34px;
   }
 
   .angle_right {
@@ -53,19 +60,20 @@
     float: left;
   }
 
-  .bar_icon_icon {
-    width: 500px;
-    float: right;
-    margin-top: 10px;
 
-    .fb-share-button {
+  .social_icons {
+    padding-top: 40px;
+    text-align: center;
+
+    .fb-like {
       padding-right: 20px;
       vertical-align: top;
+      float: none !important;
     }
 
-    .twitter-share-button {
+    .twitter-follow-button {
       display: block-inline;
-      padding-top: 1px;
+      padding-top: 2px;
     }
   }
 
