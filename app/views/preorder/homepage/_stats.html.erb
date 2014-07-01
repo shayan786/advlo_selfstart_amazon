@@ -17,10 +17,20 @@
         Thank you, we will keep you updated!
       </p>
 
+      <script> 
+        $('#contact').on('ajax:send', function(event, data, status, xhr) {
+          // Do your thing, data will be the response
+          $(this).hide();
+
+          $(".contact_msg").show();
+          //alert("You're in! We'll notify you as soon as Advlo launches");
+        });
+      </script>
+
     </div>
 
     <div class="social_icons">
-      <div class="fb-like" data-href="http://www.facebook.com/advlo" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      <div class="fb-like" data-href="http://www.facebook.com/advlo" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
       
       <a href="https://twitter.com/advlo_" class="twitter-follow-button" data-show-count="false">Follow @advlo_</a>
     </div>

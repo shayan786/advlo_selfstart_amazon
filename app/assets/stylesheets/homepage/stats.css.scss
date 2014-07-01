@@ -31,7 +31,7 @@
     margin-bottom: 20px;
     color: white;
     text-shadow: none !important;
-    opacity: 0.8;
+    opacity: 0.9;
 
     .local_word {
       font-size: 52px;
@@ -41,6 +41,7 @@
 
   .backing_subtitle {
     @extend .backing_header;
+    opacity: 0.8;
     font-size: 34px;
   }
 
