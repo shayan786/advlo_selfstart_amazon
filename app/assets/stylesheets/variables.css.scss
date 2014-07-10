@@ -75,6 +75,12 @@ font-family: cabin_semibolditalic;
 src: asset-url('Cabin-SemiBoldItalic.otf');
 }
 
+@font-face
+{
+font-family: nexa_bold;
+src: asset-url('Nexa-Bold.otf');
+}
+
 $primary_font:   "cabin_regular";
 $secondary_font: "cabin_regular";
 $tertiary_font:  "cabin_regular";

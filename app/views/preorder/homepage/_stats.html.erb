@@ -3,14 +3,14 @@
     <div class="backing_header">ADVENTURE WITH <span class="local_word"> LOCALS </span> NOT TOUR GUIDES</div>
 
     <div class="backing_subtitle">
-      ADVLO IS LAUNCHING SOON
+      LAUNCHING SOON
     </div>
 
     <div id="middle_reserve" class="contact_form">
       <%= form_tag "/preorder/contact", :remote => true, :id=> "contact" do %> 
         <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
-        <%= email_field_tag "contact_email", nil, :placeholder => "Enter email to get notified", :required => "required", :id => "contact_email" %>
-        <%= submit_tag "JOIN", :class => "blue_button", :id => "contact_button" %>
+        <%= email_field_tag "contact_email", nil, :placeholder => "Enter email for early access", :required => "required", :id => "contact_email" %>
+        <%= submit_tag "Request Invite", :class => "blue_button", :id => "contact_button" %>
       <% end %>
 
       <p class="contact_msg center">
@@ -34,10 +34,6 @@
       
       <a href="https://twitter.com/advlo_" class="twitter-follow-button" data-show-count="false">Follow @advlo_</a>
     </div>
-
-
-      <!-- <div class="fb-share-button" data-href="http://www.advlo.com" data-width="50" data-type="button"></div>
-      <a href="http://advlo.com" class="twitter-share-button" data-count = "none" data-text="I just supported @Advlo_ so i can #AdventureLocal. Join me to travel with locals not tour guides." data-size="small">Tweet</a> -->
 
   </div>
   
