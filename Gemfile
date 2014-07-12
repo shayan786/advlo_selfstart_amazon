@@ -29,6 +29,8 @@ group :development, :test do
   gem 'shoulda'
 end
 
+gem 'newrelic_rpm'
+
 # jQuery
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
